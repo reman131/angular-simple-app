@@ -13,7 +13,7 @@ import { ProductService } from '../product.service';
 export class TableComponent implements OnInit {
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource!: Prodcut[];//= ELEMENT_DATA;
+  products!: Prodcut[];//= ELEMENT_DATA;
 
   constructor(private productService: ProductService) { }
 
@@ -23,12 +23,12 @@ export class TableComponent implements OnInit {
 
   showProducts(): void {
     this.productService.getProducts().subscribe((products) => {
-      this.dataSource = [...products]
+      this.products = [...products]
     });
   }
 
   deleteProducts() {
-    this.dataSource = [];
+    this.products = [];
   }
 
 }

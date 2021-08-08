@@ -2,7 +2,7 @@
   <button id="getBtn1" mat-raised-button color="warn" (click)="showProducts()">get</button>
   <button id="getBtn2" mat-raised-button color="warn" (click)="deleteProducts()">delete</button>
 </div>
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="products" class="mat-elevation-z8">
 
   <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
@@ -32,5 +32,5 @@
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  <tr class="element-row" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
