@@ -1,0 +1,24 @@
+table {
+  width: 90%;
+  margin: auto;
+}
+
+#getBtn1 {
+  width: 15%;
+  margin-left: auto;
+  margin-right: 0.25%;
+}
+
+#getBtn2 {
+  width: 15%;
+  margin-right: auto;
+  margin-left: 0.25%;
+}
+
+
+#testDiv {
+  width: 90%;
+  align-items: center;
+  margin: auto;
+  display: flex;
+}

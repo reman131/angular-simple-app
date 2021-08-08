@@ -1,0 +1,12 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer class="example-sidenav-content" mode="side" [opened]="opened">
+    Drawer content
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div id="testDiv">
+      <button color="accent" class="arrow-right" id="getBtn" mat-raised-button (click)="sidNavToggle()"></button>
+    </div>
+    <app-table></app-table>
+  </mat-drawer-content>
+</mat-drawer-container>

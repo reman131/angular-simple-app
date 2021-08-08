@@ -1,0 +1,31 @@
+.example-container {
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  border: 1px solid #555;
+}
+
+.example-sidenav-content {
+  display: flex;
+  width: 15%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-right {
+  height: 0px;
+  width: 0px;
+  min-width: 0px;
+  padding: 0px;
+  box-shadow: none;
+  border-top: 15px solid #303030;
+  border-bottom: 15px solid #303030;
+
+  border-left: 15px solid #f44336;
+}
+
+#testDiv {
+  position: fixed;
+  bottom: 50%;
+}
