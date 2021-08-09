@@ -26,4 +26,5 @@ table {
 /*darkslategrey dimgray rgb(59, 53, 53) rgb(56, 65, 65) rgb(65, 62, 62) rgb(65, 70, 70)*/
 tr.element-row:hover {
   background: rgb(65, 62, 62);
+  cursor: pointer;
 }

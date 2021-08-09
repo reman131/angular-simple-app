@@ -2,7 +2,7 @@ import { ConditionalExpr } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Prodcut } from '../product';
 import { ProductService } from '../product.service';
-
+import { Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -14,6 +14,7 @@ export class TableComponent implements OnInit {
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   products!: Prodcut[];//= ELEMENT_DATA;
+  @Output() notify = new EventEmitter();
 
   constructor(private productService: ProductService) { }
 

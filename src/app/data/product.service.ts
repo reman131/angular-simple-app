@@ -11,6 +11,6 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getProducts() {
-    return this.http.get<Prodcut[]>('https://my-json-server.typicode.com/reman131/mock-server/products?id=9');
+    return this.http.get<Prodcut[]>('https://my-json-server.typicode.com/reman131/mock-server/products');
   }
 }

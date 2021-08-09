@@ -11,8 +11,12 @@ export class TableWithSliderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   sidNavToggle() {
     this.opened = !this.opened;
   }
 
+  showClickedRow(row: any) {
+    console.log(JSON.stringify(row));
+  }
 }

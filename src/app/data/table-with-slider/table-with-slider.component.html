@@ -7,6 +7,6 @@
     <div id="testDiv">
       <button color="accent" class="arrow-right" id="getBtn" mat-raised-button (click)="sidNavToggle()"></button>
     </div>
-    <app-table></app-table>
+    <app-table (notify)="showClickedRow($event)"></app-table>
   </mat-drawer-content>
 </mat-drawer-container>
