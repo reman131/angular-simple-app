@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-table-with-slider',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableWithSliderComponent implements OnInit {
   opened = false;
+  clickedProduct!: Product;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +20,7 @@ export class TableWithSliderComponent implements OnInit {
   }
 
   showClickedRow(row: any) {
+    this.clickedProduct = row;
     console.log(JSON.stringify(row));
   }
 }

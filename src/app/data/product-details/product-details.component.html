@@ -1,0 +1,7 @@
+<h3>Details</h3>
+<div *ngIf="product">
+  <div *ngFor="let key of productDetails">
+    <label>{{key[0]}}: </label>
+    <span> {{key[1]}}</span>
+  </div>
+</div>

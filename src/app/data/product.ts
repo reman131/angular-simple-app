@@ -1,4 +1,4 @@
-export interface Prodcut {
+export interface Product {
     position: number,
     name: string,
     weight: number,

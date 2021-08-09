@@ -1,6 +1,6 @@
 import { ConditionalExpr } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { Prodcut } from '../product';
+import { Product } from '../product';
 import { ProductService } from '../product.service';
 import { Output, EventEmitter } from '@angular/core';
 
@@ -13,13 +13,12 @@ import { Output, EventEmitter } from '@angular/core';
 export class TableComponent implements OnInit {
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  products!: Prodcut[];//= ELEMENT_DATA;
+  products!: Product[];//= ELEMENT_DATA;
   @Output() notify = new EventEmitter();
 
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-
   }
 
   showProducts(): void {
@@ -30,6 +29,6 @@ export class TableComponent implements OnInit {
 
   deleteProducts() {
     this.products = [];
+    this.notify.emit();
   }
-
 }

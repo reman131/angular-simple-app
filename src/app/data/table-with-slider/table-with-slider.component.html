@@ -1,6 +1,6 @@
 <mat-drawer-container class="example-container">
   <mat-drawer class="example-sidenav-content" mode="side" [opened]="opened">
-    Drawer content
+    <app-product-details [product]="clickedProduct"></app-product-details>
   </mat-drawer>
 
   <mat-drawer-content>
